@@ -1,0 +1,11 @@
+{
+  "doc_id": "wo_2026_05_14_trf_0147",
+  "doc_type": "work_order",
+  "title": "Work Order 4471: T1 Transformer Oil Change and Bushing Replacement",
+  "work_order_no": "WO-4471",
+  "date": "2026-05-14",
+  "asset_id": "TRF-0147",
+  "activity": "maintenance",
+  "governing_specs": ["spec_trf_oil_v3"],
+  "body": "Replaced HV and LV bushings and changed 2400 litres of mineral oil on transformer TRF-0147. Bushing insulation test performed per spec_trf_oil_v3, the three-year interval standard effective 2026-01-01. Post-service oil dielectric strength measured 46 kV, above the v3 minimum of 45 kV. Transformer returned to service the same day."
+}

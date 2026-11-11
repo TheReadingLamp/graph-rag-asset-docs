@@ -1,0 +1,11 @@
+{
+  "doc_id": "wo_2025_11_02_trf_0148",
+  "doc_type": "work_order",
+  "title": "Work Order 4350: T2 Bushing Insulation Test",
+  "work_order_no": "WO-4350",
+  "date": "2025-11-02",
+  "asset_id": "TRF-0148",
+  "activity": "test",
+  "governing_specs": ["spec_trf_oil_v2"],
+  "body": "Routine bushing insulation test on transformer TRF-0148 carried out per spec_trf_oil_v2, the governing standard at the time (v2 effective 2025-01-01, six-year test interval). Test passed. Oil dielectric strength measured 41 kV, within the v2 minimum of 40 kV."
+}

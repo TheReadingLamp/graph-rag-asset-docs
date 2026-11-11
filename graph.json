@@ -1,0 +1,405 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "kind": "asset",
+      "asset_type": "substation",
+      "name": "Riverside 132/33 kV Substation",
+      "parent": null,
+      "status": "in_service",
+      "id": "SUB-01"
+    },
+    {
+      "kind": "asset",
+      "asset_type": "transformer",
+      "name": "132/33 kV Power Transformer T1",
+      "parent": "SUB-01",
+      "status": "in_service",
+      "oil_dielectric_kv": 46,
+      "bushing_last_tested": "2026-05-14",
+      "id": "TRF-0147"
+    },
+    {
+      "kind": "asset",
+      "asset_type": "transformer",
+      "name": "132/33 kV Power Transformer T2",
+      "parent": "SUB-01",
+      "status": "in_service",
+      "oil_dielectric_kv": 42,
+      "bushing_last_tested": "2025-11-02",
+      "id": "TRF-0148"
+    },
+    {
+      "kind": "asset",
+      "asset_type": "breaker",
+      "name": "33 kV Feeder Breaker A1",
+      "parent": "SUB-01",
+      "status": "in_service",
+      "id": "BRK-2201"
+    },
+    {
+      "kind": "asset",
+      "asset_type": "breaker",
+      "name": "33 kV Feeder Breaker A2",
+      "parent": "SUB-01",
+      "status": "in_service",
+      "id": "BRK-2202"
+    },
+    {
+      "kind": "document",
+      "doc_type": "asset_register",
+      "title": "Riverside Substation Asset Register",
+      "version": "7",
+      "effective_date": "2026-03-01",
+      "source": "corpus\\asset_register.json",
+      "body": "Authoritative register of utility assets at Riverside 132/33 kV substation SUB-01. The substation contains two 132/33 kV power transformers TRF-0147 and TRF-0148 and two 33 kV feeder breakers BRK-2201 and BRK-2202. Transformer TRF-0147 oil dielectric strength 46 kV, bushings last tested 2026-05-14. Transformer TRF-0148 oil dielectric strength 42 kV, bushings last tested 2025-11-02. Both breakers in service with SF6 gas per spec_breaker_sf6_v1.",
+      "id": "asset_register"
+    },
+    {
+      "kind": "document",
+      "doc_type": "inspection_report",
+      "title": "Quarterly Inspection Report - Transformer TRF-0148",
+      "effective_date": "2026-04-20",
+      "source": "corpus\\insp_2026_04_20_trf_0148.md",
+      "body": "# Quarterly Inspection Report, 2026-04-20\n\nAsset inspected: TRF-0148 (132/33 kV power transformer T2).\n\nOil sample taken and laboratory tested. Oil dielectric strength measured 42 kV. Assessed within acceptable limits per spec_trf_oil_v2 (minimum 40 kV). No visible leaks. Cooling fans operating normally. Next scheduled inspection Q3 2026.",
+      "governing_specs": "spec_trf_oil_v2",
+      "id": "insp_2026_04_20_trf_0148"
+    },
+    {
+      "kind": "document",
+      "doc_type": "inspection_report",
+      "title": "Post-Refill Inspection Report - Breaker BRK-2201",
+      "effective_date": "2026-09-30",
+      "source": "corpus\\insp_2026_09_30_brk_2201.md",
+      "body": "# Post-Refill Inspection Report, 2026-09-30\n\nAsset inspected: BRK-2201 (33 kV feeder breaker A1).\n\nSF6 gas pressure and density verified within limits per spec_breaker_sf6_v1 after the August 2026 refill. Contact wear within tolerance. No leakage detected. Breaker fit for continued service.",
+      "governing_specs": "spec_breaker_sf6_v1",
+      "id": "insp_2026_09_30_brk_2201"
+    },
+    {
+      "kind": "document",
+      "doc_type": "engineering_spec",
+      "title": "SF6 Circuit Breaker Gas Handling Specification",
+      "version": "1",
+      "effective_date": "2024-06-15",
+      "source": "corpus\\spec_breaker_sf6_v1.md",
+      "body": "# SF6 Circuit Breaker Gas Handling Specification, Version 1\n\nEffective 2024-06-15. Applies to all 33 kV SF6 feeder breakers.\n\n## 2. Operating limits\n2.1 Minimum SF6 operating pressure: 0.65 MPa at 20 C.\n2.2 Maximum permissible leak rate: 0.5 percent per year.\n\n## 5. Refill procedure\n5.1 Refill only with gas conforming to IEC 60376; record density before and after refill.",
+      "id": "spec_breaker_sf6_v1"
+    },
+    {
+      "kind": "document",
+      "doc_type": "engineering_spec",
+      "title": "Transformer Oil and Bushing Maintenance Standard",
+      "version": "2",
+      "effective_date": "2025-01-01",
+      "source": "corpus\\spec_trf_oil_v2.md",
+      "body": "# Transformer Oil and Bushing Maintenance Standard, Version 2\n\nEffective 2025-01-01. Applies to all 132/33 kV power transformers at Riverside substation.\n\n## 3. Acceptance limits\n3.1 Minimum oil dielectric strength: 40 kV.\n\n## 4. Test intervals\n4.2 Bushing insulation test interval: 6 years.\n4.3 Oil change interval: 12 years, or on condition.\n\nThis document supersedes spec_trf_oil_v1.",
+      "id": "spec_trf_oil_v2"
+    },
+    {
+      "kind": "document",
+      "doc_type": "engineering_spec",
+      "title": "Transformer Oil and Bushing Maintenance Standard",
+      "version": "3",
+      "effective_date": "2026-01-01",
+      "source": "corpus\\spec_trf_oil_v3.md",
+      "body": "# Transformer Oil and Bushing Maintenance Standard, Version 3\n\nEffective 2026-01-01. Applies to all 132/33 kV power transformers at Riverside substation.\n\n## 3. Acceptance limits\n3.1 Minimum oil dielectric strength: 45 kV (raised from 40 kV).\n\n## 4. Test intervals\n4.2 Bushing insulation test interval: 3 years (reduced from 6 years following repeated bushing failures).\n4.3 Oil change interval: 10 years, or on condition.\n\nThis document supersedes spec_trf_oil_v2. Work performed after 2026-01-01 must comply with this version.",
+      "id": "spec_trf_oil_v3"
+    },
+    {
+      "kind": "document",
+      "doc_type": "work_order",
+      "title": "Work Order 4350: T2 Bushing Insulation Test",
+      "effective_date": "2025-11-02",
+      "source": "corpus\\wo_2025_11_02_trf_0148.json",
+      "body": "Routine bushing insulation test on transformer TRF-0148 carried out per spec_trf_oil_v2, the governing standard at the time (v2 effective 2025-01-01, six-year test interval). Test passed. Oil dielectric strength measured 41 kV, within the v2 minimum of 40 kV.",
+      "work_order_no": "WO-4350",
+      "activity": "test",
+      "governing_specs": [
+        "spec_trf_oil_v2"
+      ],
+      "id": "wo_2025_11_02_trf_0148"
+    },
+    {
+      "kind": "document",
+      "doc_type": "work_order",
+      "title": "Work Order 4490: TRF-0147 Bushing Insulation Test Under Draft v3",
+      "effective_date": "2025-12-10",
+      "source": "corpus\\wo_2025_12_10_trf_0147.json",
+      "body": "Insulation testing on transformer TRF-0147 carried out per spec_trf_oil_v3 as circulated in draft ahead of its formal effective date. Bushing insulation test performed to the new three-year interval specified in the draft v3 standard.",
+      "work_order_no": "WO-4490",
+      "activity": "test",
+      "governing_specs": [
+        "spec_trf_oil_v3"
+      ],
+      "id": "wo_2025_12_10_trf_0147"
+    },
+    {
+      "kind": "document",
+      "doc_type": "work_order",
+      "title": "Work Order 4471: T1 Transformer Oil Change and Bushing Replacement",
+      "effective_date": "2026-05-14",
+      "source": "corpus\\wo_2026_05_14_trf_0147.json",
+      "body": "Replaced HV and LV bushings and changed 2400 litres of mineral oil on transformer TRF-0147. Bushing insulation test performed per spec_trf_oil_v3, the three-year interval standard effective 2026-01-01. Post-service oil dielectric strength measured 46 kV, above the v3 minimum of 45 kV. Transformer returned to service the same day.",
+      "work_order_no": "WO-4471",
+      "activity": "maintenance",
+      "governing_specs": [
+        "spec_trf_oil_v3"
+      ],
+      "id": "wo_2026_05_14_trf_0147"
+    },
+    {
+      "kind": "event",
+      "date": "2026-04-20",
+      "activity": "inspection",
+      "asset_id": "TRF-0148",
+      "source": "corpus\\insp_2026_04_20_trf_0148.md",
+      "id": "EVT-insp_2026_04_20_trf_0148"
+    },
+    {
+      "kind": "event",
+      "date": "2026-09-30",
+      "activity": "inspection",
+      "asset_id": "BRK-2201",
+      "source": "corpus\\insp_2026_09_30_brk_2201.md",
+      "id": "EVT-insp_2026_09_30_brk_2201"
+    },
+    {
+      "kind": "event",
+      "date": "2025-11-02",
+      "activity": "test",
+      "asset_id": "TRF-0148",
+      "work_order_no": "WO-4350",
+      "source": "corpus\\wo_2025_11_02_trf_0148.json",
+      "id": "EVT-wo_2025_11_02_trf_0148"
+    },
+    {
+      "kind": "event",
+      "date": "2025-12-10",
+      "activity": "test",
+      "asset_id": "TRF-0147",
+      "work_order_no": "WO-4490",
+      "source": "corpus\\wo_2025_12_10_trf_0147.json",
+      "id": "EVT-wo_2025_12_10_trf_0147"
+    },
+    {
+      "kind": "event",
+      "date": "2026-05-14",
+      "activity": "maintenance",
+      "asset_id": "TRF-0147",
+      "work_order_no": "WO-4471",
+      "source": "corpus\\wo_2026_05_14_trf_0147.json",
+      "id": "EVT-wo_2026_05_14_trf_0147"
+    }
+  ],
+  "edges": [
+    {
+      "type": "CONTAINS",
+      "source": "SUB-01",
+      "target": "TRF-0147"
+    },
+    {
+      "type": "CONTAINS",
+      "source": "SUB-01",
+      "target": "TRF-0148"
+    },
+    {
+      "type": "CONTAINS",
+      "source": "SUB-01",
+      "target": "BRK-2201"
+    },
+    {
+      "type": "CONTAINS",
+      "source": "SUB-01",
+      "target": "BRK-2202"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "asset_register",
+      "target": "BRK-2201"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "asset_register",
+      "target": "BRK-2202"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "asset_register",
+      "target": "SUB-01"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "asset_register",
+      "target": "TRF-0147"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "asset_register",
+      "target": "TRF-0148"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "insp_2026_04_20_trf_0148",
+      "target": "TRF-0148"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "insp_2026_04_20_trf_0148",
+      "target": "EVT-insp_2026_04_20_trf_0148"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "insp_2026_04_20_trf_0148",
+      "target": "spec_trf_oil_v2"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "insp_2026_09_30_brk_2201",
+      "target": "BRK-2201"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "insp_2026_09_30_brk_2201",
+      "target": "EVT-insp_2026_09_30_brk_2201"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "insp_2026_09_30_brk_2201",
+      "target": "spec_breaker_sf6_v1"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "spec_breaker_sf6_v1",
+      "target": "BRK-2201"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "spec_breaker_sf6_v1",
+      "target": "BRK-2202"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "spec_trf_oil_v2",
+      "target": "TRF-0147"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "spec_trf_oil_v2",
+      "target": "TRF-0148"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "spec_trf_oil_v3",
+      "target": "TRF-0147"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "spec_trf_oil_v3",
+      "target": "TRF-0148"
+    },
+    {
+      "type": "SUPERSEDES",
+      "source": "spec_trf_oil_v3",
+      "target": "spec_trf_oil_v2"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "wo_2025_11_02_trf_0148",
+      "target": "TRF-0148"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "wo_2025_11_02_trf_0148",
+      "target": "EVT-wo_2025_11_02_trf_0148"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "wo_2025_11_02_trf_0148",
+      "target": "spec_trf_oil_v2"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "wo_2025_12_10_trf_0147",
+      "target": "TRF-0147"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "wo_2025_12_10_trf_0147",
+      "target": "EVT-wo_2025_12_10_trf_0147"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "wo_2025_12_10_trf_0147",
+      "target": "spec_trf_oil_v3"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "wo_2026_05_14_trf_0147",
+      "target": "TRF-0147"
+    },
+    {
+      "type": "DOCUMENTS",
+      "source": "wo_2026_05_14_trf_0147",
+      "target": "EVT-wo_2026_05_14_trf_0147"
+    },
+    {
+      "type": "REFERENCES",
+      "source": "wo_2026_05_14_trf_0147",
+      "target": "spec_trf_oil_v3"
+    },
+    {
+      "type": "OCCURRED_ON",
+      "source": "EVT-insp_2026_04_20_trf_0148",
+      "target": "TRF-0148"
+    },
+    {
+      "type": "OCCURRED_ON",
+      "source": "EVT-insp_2026_09_30_brk_2201",
+      "target": "BRK-2201"
+    },
+    {
+      "type": "OCCURRED_ON",
+      "source": "EVT-wo_2025_11_02_trf_0148",
+      "target": "TRF-0148"
+    },
+    {
+      "type": "PRECEDES",
+      "source": "EVT-wo_2025_11_02_trf_0148",
+      "target": "EVT-insp_2026_04_20_trf_0148"
+    },
+    {
+      "type": "OCCURRED_ON",
+      "source": "EVT-wo_2025_12_10_trf_0147",
+      "target": "TRF-0147"
+    },
+    {
+      "type": "PRECEDES",
+      "source": "EVT-wo_2025_12_10_trf_0147",
+      "target": "EVT-wo_2026_05_14_trf_0147"
+    },
+    {
+      "type": "OCCURRED_ON",
+      "source": "EVT-wo_2026_05_14_trf_0147",
+      "target": "TRF-0147"
+    }
+  ],
+  "meta": {
+    "generated": "2026-11-11",
+    "corpus_dir": "corpus",
+    "node_kinds": {
+      "asset": 5,
+      "document": 9,
+      "event": 5
+    },
+    "edge_types": {
+      "CONTAINS": 4,
+      "DOCUMENTS": 21,
+      "REFERENCES": 5,
+      "SUPERSEDES": 1,
+      "OCCURRED_ON": 5,
+      "PRECEDES": 2
+    }
+  }
+}

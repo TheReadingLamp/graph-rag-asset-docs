@@ -1,0 +1,11 @@
+{
+  "doc_id": "wo_2025_12_10_trf_0147",
+  "doc_type": "work_order",
+  "title": "Work Order 4490: TRF-0147 Bushing Insulation Test Under Draft v3",
+  "work_order_no": "WO-4490",
+  "date": "2025-12-10",
+  "asset_id": "TRF-0147",
+  "activity": "test",
+  "governing_specs": ["spec_trf_oil_v3"],
+  "body": "Insulation testing on transformer TRF-0147 carried out per spec_trf_oil_v3 as circulated in draft ahead of its formal effective date. Bushing insulation test performed to the new three-year interval specified in the draft v3 standard."
+}

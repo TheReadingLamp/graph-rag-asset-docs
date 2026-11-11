@@ -1,0 +1,15 @@
+{
+  "doc_id": "asset_register",
+  "doc_type": "asset_register",
+  "title": "Riverside Substation Asset Register",
+  "version": "7",
+  "effective_date": "2026-03-01",
+  "body": "Authoritative register of utility assets at Riverside 132/33 kV substation SUB-01. The substation contains two 132/33 kV power transformers TRF-0147 and TRF-0148 and two 33 kV feeder breakers BRK-2201 and BRK-2202. Transformer TRF-0147 oil dielectric strength 46 kV, bushings last tested 2026-05-14. Transformer TRF-0148 oil dielectric strength 42 kV, bushings last tested 2025-11-02. Both breakers in service with SF6 gas per spec_breaker_sf6_v1.",
+  "assets": [
+    {"id": "SUB-01", "asset_type": "substation", "name": "Riverside 132/33 kV Substation", "parent": null, "status": "in_service"},
+    {"id": "TRF-0147", "asset_type": "transformer", "name": "132/33 kV Power Transformer T1", "parent": "SUB-01", "status": "in_service", "oil_dielectric_kv": 46, "bushing_last_tested": "2026-05-14"},
+    {"id": "TRF-0148", "asset_type": "transformer", "name": "132/33 kV Power Transformer T2", "parent": "SUB-01", "status": "in_service", "oil_dielectric_kv": 42, "bushing_last_tested": "2025-11-02"},
+    {"id": "BRK-2201", "asset_type": "breaker", "name": "33 kV Feeder Breaker A1", "parent": "SUB-01", "status": "in_service"},
+    {"id": "BRK-2202", "asset_type": "breaker", "name": "33 kV Feeder Breaker A2", "parent": "SUB-01", "status": "in_service"}
+  ]
+}
